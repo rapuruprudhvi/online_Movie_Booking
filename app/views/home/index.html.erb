@@ -2,8 +2,9 @@
   <div class="row">
     <div class="col-3">
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-light">Now Showing</button>
-        <button type="button" class="btn btn-light">Coming Soon</button>
+      <%= link_to "Now Showing", now_showing_movies_path, class: "btn btn-light" %>
+      <%= link_to "Coming Soon", upcoming_movies_path, class: "btn btn-light" %>
+      
       </div>
     </div>
     <div class="col-7">
@@ -23,4 +24,15 @@
       </div>
     </div>
   </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3" style="margin-top: 30px; border-radius: 10px;">
+            Sidebar content here
+        </div>
+        <div class="col-sm-9" style="margin-top: 30px; border-radius: 100px;">
+            <div style="width: 903px; height: 985px; background-color: #f0f0f0;">
+            </div>
+        </div>
+    </div>
 </div>

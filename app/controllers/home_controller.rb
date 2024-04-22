@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
     def index
-    end
+        @upcoming_movies = Movie.where("release_date > ?", Date.today)
+      end
 end

@@ -11,7 +11,12 @@ Rails.application.routes.draw do
   
   # Define resources for users
   resources :users
-
+  resources :movies do
+    collection do
+      get :upcoming, to: 'movies#upcoming'
+      get :now_showing, to: 'movies#now_showing'
+    end
+  end
   # Define the root path route ("/")
   root to: "home#index"
 

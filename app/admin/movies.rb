@@ -14,5 +14,14 @@ ActiveAdmin.register Movie do
   #   permitted << :other if params[:action] == 'create' && current_user.admin?
   #   permitted
   # end
+  form do |f|
+    f.inputs do
+      f.input :title
+      f.input :rating
+      # Remove any f.input for user_id if present
+    end
+    f.actions
+  end
+  
   
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_21_101140) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_22_130410) do
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -43,6 +43,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_21_101140) do
     t.integer "theatre_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "release_date"
     t.index ["theatre_id"], name: "index_movies_on_theatre_id"
   end
 
